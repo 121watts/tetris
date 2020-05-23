@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <script src="app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Tetris</title>
+</head>
+
+<body>
+    <div class="game">
+        <div class="arcade">
+            <h1 class="arcade-name">TETRIS</h1>
+            <div class="controls">
+                <button id="start-button">Start</button>
+                <button id="pause-button">Pause</button>
+                <button id="continue-button">Continue</button>
+            </div>
+            <div class="container">
+                <div class="score">
+                    <span id="score">
+                        <div class="score-unit">0</div>
+                    </span>
+                    <div class="score-unit">pts</div>
+                </div>
+                <div class="grids">
+                    <div id="grid" class="grid"></div>
+                    <div id="mini-grid" class="mini-grid"></div>
+                </div>
+            </div>
+            <audio id="music" autoplay loop controls>
+                <source src="tetris.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+</body>
+
+</html>
